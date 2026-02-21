@@ -190,6 +190,7 @@ class SquadLoader {
    * const { path, manifestPath } = await loader.resolve('etl-squad');
    * // { path: './squads/etl-squad', manifestPath: './squads/etl-squad/squad.yaml' }
    */
+  // AIDEV-SECURITY: Boundary de Resolução - Garante que apenas Squads autorizados em ./squads sejam carregados
   async resolve(squadName) {
     this._log(`Resolving squad: ${squadName}`);
     const squadPath = path.join(this.squadsPath, squadName);

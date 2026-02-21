@@ -1,0 +1,34 @@
+id: health-notifier
+name: System Health Notifier
+description: Monitorea as métricas de saúde do sistema (CPU, Memória, Uptime) e envia notificações se os limites forem excedidos.
+category: script
+subcategory: monitoring
+inputs:
+  - name: threshold
+    description: Limite de uso de memória (%) para gatilho de alerta
+    type: number
+    default: 90
+outputs:
+  - name: healthReport
+    description: Objeto contendo métricas de uptime, memória e carga
+tags:
+  - monitoring
+  - health
+  - cleudocode
+  - notification
+path: packages/custom-workers/health-notifier.js
+taskFormat: SCRIPT
+executorTypes:
+  - CLI
+  - Script
+performance:
+  avgDuration: 200ms
+  cacheable: false
+  parallelizable: true
+agents:
+  - dev
+  - devops
+metadata:
+  source: custom
+  addedVersion: 1.1.0
+  brand: Cleudocode

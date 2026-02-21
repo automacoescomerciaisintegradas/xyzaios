@@ -176,7 +176,7 @@ function parseAgentFile(filePath) {
     result.sections.quickCommands = extractSection(content, 'Quick Commands');
     result.sections.collaboration = extractSection(content, 'Agent Collaboration');
     result.sections.guide = extractSection(content, 'Developer Guide') ||
-                           extractSection(content, '.*Guide \\(\\*guide command\\)');
+      extractSection(content, '.*Guide \\(\\*guide command\\)');
 
   } catch (error) {
     result.error = error.message;
@@ -190,6 +190,7 @@ function parseAgentFile(filePath) {
  * @param {string} agentsDir - Path to agents directory
  * @returns {object[]} - Array of parsed agent data
  */
+// AIDEV-NOTE: Função principal do Loader que varre os perfis de agente e os compila para instâncias (.md > AST)
 function parseAllAgents(agentsDir) {
   const agents = [];
 

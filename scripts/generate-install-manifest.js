@@ -206,6 +206,7 @@ function scanDirectory(dirPath, basePath, files = []) {
  * Generate the install manifest
  * @returns {Object} - Manifest object
  */
+// AIDEV-SECURITY: Boundary de Integridade - Gera hashes SHA256 para detecção de drifts em upgrades Brownfield
 async function generateManifest() {
   const aiosCoreDir = path.join(__dirname, '..', '.aios-core');
   const packageJsonPath = path.join(__dirname, '..', 'package.json');

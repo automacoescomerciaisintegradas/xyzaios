@@ -140,6 +140,7 @@ function getTransformer(format) {
  * @param {object} options - Sync options
  * @returns {object} - Sync result
  */
+// AIDEV-SECURITY: Boundary de Sincronização de IDE - Escrita de prompts dinâmicos na workspace local
 function syncIde(agents, ideConfig, ideName, projectRoot, options) {
   const result = {
     ide: ideName,

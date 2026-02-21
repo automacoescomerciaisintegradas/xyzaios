@@ -18,7 +18,7 @@ const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
 const args = process.argv.slice(2);
 const command = args[0];
 
-// Helper: Run initialization wizard
+// AIDEV-NOTE: Wrapper para execução fluída do AIOS Initialization Wizard e fallback tracking
 async function runWizard(options = {}) {
   // Use the v4 wizard from packages/installer/src/wizard/index.js
   const wizardPath = path.join(__dirname, '..', 'packages', 'installer', 'src', 'wizard', 'index.js');
@@ -236,7 +236,7 @@ function showInfo() {
   }
 }
 
-// Helper: Run installation validation
+// AIDEV-SECURITY: Boundary de Validação - Garante estabilidade e previne execuções em repositórios corrompidos
 async function runValidate() {
   const validateArgs = args.slice(1); // Remove 'validate' from args
 
@@ -347,7 +347,7 @@ async function runUpdate() {
   }
 }
 
-// Helper: Run doctor diagnostics
+// AIDEV-NOTE: Wrapper global do diagnóstico clínico do sistema AIOS (Doctor)
 async function runDoctor() {
   const doctorArgs = args.slice(1);
   const shouldFix = doctorArgs.includes('--fix');

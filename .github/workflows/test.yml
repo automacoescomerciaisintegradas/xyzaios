@@ -29,14 +29,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run security audit
         run: |
@@ -57,14 +51,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Test workspace package
         run: |
@@ -110,14 +98,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Test CLI integration
         run: |
@@ -174,14 +156,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run performance checks
         run: |

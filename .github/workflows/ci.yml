@@ -85,15 +85,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run security audit
         run: |
@@ -119,15 +112,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run ESLint
         run: npm run lint
@@ -143,15 +129,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run TypeScript type checking
         run: npm run typecheck
@@ -170,15 +149,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run tests with coverage
         run: npm run test:coverage
@@ -210,15 +182,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Validate story checkboxes
         run: node .aios-core/utils/aios-validator.js stories
@@ -234,15 +199,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Validate install manifest
         run: npm run validate:manifest
@@ -258,15 +216,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Validate IDE sync
         run: npm run sync:ide:check
@@ -289,15 +240,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run compatibility parity gate
         run: npm run validate:parity
@@ -313,15 +257,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run semantic lint
         run: npm run validate:semantic-lint
@@ -424,15 +361,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Measure validation performance
         run: |
@@ -463,15 +393,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run SYNAPSE E2E tests
         run: npx jest tests/synapse/e2e/ --ci --verbose
@@ -500,15 +423,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js ${{ matrix.node }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Run tests
         run: npm test
@@ -535,15 +451,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
+      - name: Setup Bun Environment
+        uses: ./.github/actions/setup-bun
 
       - name: Verify wizard path in aios.js
         run: |
