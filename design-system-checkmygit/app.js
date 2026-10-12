@@ -1,109 +1,95 @@
 /**
- * CheckMyGit - Interactive Application Logic
- * Featuring @madeinlowcode Profile Demo
+ * XYZAIOS Design System - Interactive Application Logic
+ * Showcase oficial do repositório: automacoescomerciaisintegradas/xyzaios
+ * XYZAIOS: AI-Orchestrated System for Full Stack Development - Core Framework v4.0
  */
 
 const PROFILE_DATA = {
-  login: "madeinlowcode",
-  name: "MadeInLowCode",
-  bio: "Especialista em Low-Code, automações inteligentes, Claude Code Skills, agentes de IA e integrações de alto impacto.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/197310556?v=4",
-  company: "@madeinlowcode",
-  websiteUrl: "https://madeinlowcode.app.br",
-  email: "madeinlowcode@gmail.com",
-  followers: 8,
-  following: 1,
-  totalContributions: 648,
-  longestStreak: 24,
-  currentStreak: 7,
+  login: "automacoescomerciaisintegradas",
+  repoName: "xyzaios",
+  name: "XYZAIOS",
+  title: "AI-Orchestrated System for Full Stack Development",
+  version: "Core Framework v4.0",
+  bio: "Framework unificado de orquestração com inteligência artificial, agentes autônomos para desenvolvimento Full Stack e paridade multi-IDE (Claude Code, Codex CLI e Gemini CLI).",
+  avatarUrl: "https://github.com/automacoescomerciaisintegradas.png",
+  company: "Automações Comerciais Integradas",
+  repoUrl: "https://github.com/automacoescomerciaisintegradas/xyzaios",
+  websiteUrl: "https://github.com/automacoescomerciaisintegradas/xyzaios",
+  email: "automacoescomerciais@gmail.com",
+  followers: 42,
+  following: 5,
+  totalContributions: 1420,
+  longestStreak: 48,
+  currentStreak: 12,
+  totalStars: 89,
   repositories: [
     {
-      name: "skills-claude-code",
-      description: "Repositório completo de Skills e ferramentas para agentes Claude Code.",
+      name: "xyzaios",
+      description: "XYZAIOS: AI-Orchestrated System for Full Stack Development - Core Framework v4.0.",
+      language: "TypeScript",
+      langColor: "#3178c6",
+      stars: 48,
+      forks: 12,
+      url: "https://github.com/automacoescomerciaisintegradas/xyzaios",
+      tags: ["aios", "framework-v4", "ai-orchestration", "multi-ide"]
+    },
+    {
+      name: "aios-core",
+      description: "Núcleo executivo do framework, constitution rules e barramento de autoridade dos agentes.",
+      language: "JavaScript",
+      langColor: "#f1e05a",
+      stars: 18,
+      forks: 6,
+      url: "https://github.com/automacoescomerciaisintegradas/xyzaios/tree/main/.aios-core",
+      tags: ["core-engine", "constitution", "agents"]
+    },
+    {
+      name: "aios-pro-cli",
+      description: "CLI inteligente com ferramentas de linha de comando para automação de tarefas e quality gates.",
+      language: "JavaScript",
+      langColor: "#f1e05a",
+      stars: 14,
+      forks: 4,
+      url: "https://github.com/automacoescomerciaisintegradas/xyzaios/tree/main/packages/aios-pro-cli",
+      tags: ["cli", "automation", "quality-gates"]
+    },
+    {
+      name: "skills-workflows",
+      description: "Workflows executáveis para sincronização, backup, testes de tipo e deploy seguro.",
+      language: "Shell",
+      langColor: "#89e051",
+      stars: 9,
+      forks: 2,
+      url: "https://github.com/automacoescomerciaisintegradas/xyzaios/tree/main/skills/workflows",
+      tags: ["lobster", "workflows", "devops"]
+    },
+    {
+      name: "synapse-engine",
+      description: "Mecanismo de memória contextual, hooks pré-compactação e diagnóstico de execução.",
+      language: "JavaScript",
+      langColor: "#f1e05a",
+      stars: 8,
+      forks: 3,
+      url: "https://github.com/automacoescomerciaisintegradas/xyzaios",
+      tags: ["synapse", "context-memory", "diagnostics"]
+    },
+    {
+      name: "sdk-python",
+      description: "SDK em Python para integração programática com o ecossistema XYZAIOS e agentes externos.",
       language: "Python",
       langColor: "#3572A5",
       stars: 7,
-      forks: 3,
-      url: "https://github.com/madeinlowcode/skills-claude-code",
-      tags: ["claude-code", "skills", "agent-framework"]
-    },
-    {
-      name: "api-Playwright-IA",
-      description: "API de automação com Playwright assistida por Inteligência Artificial e scraping headless.",
-      language: "JavaScript",
-      langColor: "#f1e05a",
-      stars: 4,
-      forks: 3,
-      url: "https://github.com/madeinlowcode/api-Playwright-IA",
-      tags: ["playwright", "ai", "automation"]
-    },
-    {
-      name: "claude-code",
-      description: "Configurações avançadas, prompts e regras de otimização para Claude Code.",
-      language: "Markdown",
-      langColor: "#083fa1",
-      stars: 2,
       forks: 1,
-      url: "https://github.com/madeinlowcode/claude-code",
-      tags: ["aios", "rules", "developer-tools"]
-    },
-    {
-      name: "TTS-Studio-Google",
-      description: "API e estúdio web de geração de voz neural com Google Cloud TTS.",
-      language: "HTML",
-      langColor: "#e34c26",
-      stars: 2,
-      forks: 1,
-      url: "https://github.com/madeinlowcode/TTS-Studio-Google",
-      tags: ["tts", "google-cloud", "audio"]
-    },
-    {
-      name: "openwork",
-      description: "Openwork™ is the open source AI coworker that lives on your desktop.",
-      language: "TypeScript",
-      langColor: "#3178c6",
-      stars: 1,
-      forks: 0,
-      url: "https://github.com/madeinlowcode/openwork",
-      tags: ["desktop-agent", "typescript", "coworker"]
-    },
-    {
-      name: "claude-octopus",
-      description: "Multi-tentacled orchestrator for Claude Code - Coordinates Codex CLI and Gemini CLI for parallel execution.",
-      language: "Shell",
-      langColor: "#89e051",
-      stars: 1,
-      forks: 0,
-      url: "https://github.com/madeinlowcode/claude-octopus",
-      tags: ["orchestrator", "cli", "multi-agent"]
-    },
-    {
-      name: "chatwoot-megaapi-bridge",
-      description: "Bridge multi-tenant em Go conectando Chatwoot self-hosted à megaAPI (WhatsApp) com balanceamento de carga.",
-      language: "Go",
-      langColor: "#00ADD8",
-      stars: 1,
-      forks: 0,
-      url: "https://github.com/madeinlowcode/chatwoot-megaapi-bridge",
-      tags: ["go", "chatwoot", "whatsapp"]
-    },
-    {
-      name: "everything-claude-code",
-      description: "Coleção de agentes, skills, hooks, comandos e MCPs desenvolvidos para Claude Code.",
-      language: "JavaScript",
-      langColor: "#f1e05a",
-      stars: 2,
-      forks: 1,
-      url: "https://github.com/madeinlowcode/everything-claude-code",
-      tags: ["mcps", "agents", "skills"]
+      url: "https://github.com/automacoescomerciaisintegradas/xyzaios/tree/main/packages/sdk/python",
+      tags: ["python", "sdk", "api"]
     }
   ],
   languages: [
-    { name: "TypeScript", percent: 42.5, color: "#3178c6" },
-    { name: "Python", percent: 28.3, color: "#3572A5" },
-    { name: "JavaScript", percent: 14.8, color: "#f1e05a" },
-    { name: "Go", percent: 8.2, color: "#00ADD8" },
-    { name: "Shell", percent: 6.2, color: "#89e051" }
+    { name: "JavaScript", percent: 46.2, color: "#f1e05a" },
+    { name: "TypeScript", percent: 31.4, color: "#3178c6" },
+    { name: "Python", percent: 12.8, color: "#3572A5" },
+    { name: "Shell", percent: 7.1, color: "#89e051" },
+    { name: "Markdown / Docs", percent: 2.5, color: "#083fa1" }
   ]
 };
 
@@ -119,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
    Theme Management
    ========================================================================== */
 function initTheme() {
-  const savedTheme = localStorage.getItem("cmg-theme") || "dark";
+  const savedTheme = localStorage.getItem("xyz-theme") || "dark";
   document.documentElement.setAttribute("data-theme", savedTheme);
 
   const themeToggle = document.getElementById("theme-toggle");
@@ -128,7 +114,7 @@ function initTheme() {
       const current = document.documentElement.getAttribute("data-theme");
       const next = current === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", next);
-      localStorage.setItem("cmg-theme", next);
+      localStorage.setItem("xyz-theme", next);
       showToast(`Tema alterado para ${next === 'dark' ? 'Modo Escuro' : 'Modo Claro'}`);
     });
   }
@@ -155,20 +141,18 @@ function renderHeatmap() {
       const cell = document.createElement("div");
       cell.className = "cmg-heatmap-cell";
 
-      // Calculate approximate date going back in time
       const daysAgo = (weeks - 1 - w) * 7 + (6 - d);
       const cellDate = new Date(today);
       cellDate.setDate(cellDate.getDate() - daysAgo);
 
-      // Generate activity level based on realistic clusters
       const rand = Math.random();
       let level = 0;
       let count = 0;
 
-      if (rand > 0.45) {
-        if (rand > 0.88) { level = 4; count = Math.floor(Math.random() * 8) + 10; }
-        else if (rand > 0.72) { level = 3; count = Math.floor(Math.random() * 5) + 5; }
-        else if (rand > 0.58) { level = 2; count = Math.floor(Math.random() * 3) + 2; }
+      if (rand > 0.40) {
+        if (rand > 0.85) { level = 4; count = Math.floor(Math.random() * 10) + 12; }
+        else if (rand > 0.68) { level = 3; count = Math.floor(Math.random() * 6) + 6; }
+        else if (rand > 0.52) { level = 2; count = Math.floor(Math.random() * 4) + 3; }
         else { level = 1; count = 1; }
       }
 
@@ -176,11 +160,10 @@ function renderHeatmap() {
       cell.setAttribute("data-count", count);
       cell.setAttribute("data-date", cellDate.toLocaleDateString("pt-BR", { month: "short", day: "numeric", year: "numeric" }));
 
-      // Tooltip handling
       cell.addEventListener("mouseenter", (e) => {
         const text = count === 0 
-          ? `Nenhuma contribuição em ${cell.getAttribute("data-date")}`
-          : `${count} contribuiç${count > 1 ? 'ões' : 'ão'} em ${cell.getAttribute("data-date")}`;
+          ? `Nenhuma atividade em ${cell.getAttribute("data-date")}`
+          : `${count} contribuiç${count > 1 ? 'ões' : 'ão'} no XYZAIOS em ${cell.getAttribute("data-date")}`;
         
         tooltip.textContent = text;
         tooltip.classList.add("visible");
@@ -213,7 +196,6 @@ function renderLanguages() {
   legendList.innerHTML = "";
 
   PROFILE_DATA.languages.forEach(lang => {
-    // Progress segment
     const segment = document.createElement("div");
     segment.className = "cmg-progress-segment";
     segment.style.width = `${lang.percent}%`;
@@ -221,7 +203,6 @@ function renderLanguages() {
     segment.title = `${lang.name}: ${lang.percent}%`;
     progressBar.appendChild(segment);
 
-    // Legend item
     const item = document.createElement("div");
     item.className = "cmg-lang-legend-item";
     item.innerHTML = `
@@ -245,7 +226,7 @@ function renderRepositories(repos) {
   if (repos.length === 0) {
     grid.innerHTML = `
       <div style="grid-column: 1 / -1; padding: 40px; text-align: center; color: var(--text-secondary);">
-        Nenhum repositório encontrado com esse filtro.
+        Nenhum repositório ou módulo encontrado com esse filtro.
       </div>
     `;
     return;
@@ -266,7 +247,7 @@ function renderRepositories(repos) {
           </a>
           <span class="cmg-badge-public">Public</span>
         </div>
-        <p class="cmg-repo-desc">${repo.description || "Sem descrição informada."}</p>
+        <p class="cmg-repo-desc">${repo.description}</p>
         <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
           ${repo.tags.map(t => `<span class="cmg-pill" style="font-size: 10px; padding: 2px 6px;">#${t}</span>`).join("")}
         </div>
@@ -301,7 +282,6 @@ function renderRepositories(repos) {
    Event Listeners (Search, Filter, Style Switch, Modals)
    ========================================================================== */
 function initEventListeners() {
-  // Search input
   const searchInput = document.getElementById("repo-search");
   if (searchInput) {
     searchInput.addEventListener("input", (e) => {
@@ -314,7 +294,6 @@ function initEventListeners() {
     });
   }
 
-  // Language filter select
   const langSelect = document.getElementById("repo-lang-filter");
   if (langSelect) {
     langSelect.addEventListener("change", (e) => {
@@ -328,7 +307,6 @@ function initEventListeners() {
     });
   }
 
-  // Style Switcher (GitHub Style vs Bento)
   const styleSelect = document.getElementById("style-select");
   if (styleSelect) {
     styleSelect.addEventListener("change", (e) => {
@@ -336,25 +314,23 @@ function initEventListeners() {
       const main = document.getElementById("portfolio-container");
       if (style === "bento") {
         main.classList.add("view-bento");
-        showToast("Estilo Bento Grid ativado");
+        showToast("Modo Bento Grid ativado");
       } else {
         main.classList.remove("view-bento");
-        showToast("Estilo GitHub Classic ativado");
+        showToast("Modo GitHub Classic ativado");
       }
     });
   }
 
-  // Modal handlers
   setupModal("btn-share", "modal-share");
   setupModal("btn-qr", "modal-qr");
   setupModal("btn-export", "modal-export");
 
-  // Copy Buttons
   const copyBtn = document.getElementById("copy-profile-link");
   if (copyBtn) {
     copyBtn.addEventListener("click", () => {
-      navigator.clipboard.writeText("https://checkmygit.com/madeinlowcode");
-      showToast("Link copiado para a área de transferência!");
+      navigator.clipboard.writeText("https://github.com/automacoescomerciaisintegradas/xyzaios");
+      showToast("Link do XYZAIOS copiado!");
     });
   }
 
@@ -365,10 +341,10 @@ function initEventListeners() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
-      a.download = `checkmygit-${PROFILE_DATA.login}.json`;
+      a.download = `xyzaios-metadata.json`;
       a.click();
       URL.revokeObjectURL(url);
-      showToast("Arquivo JSON exportado com sucesso!");
+      showToast("Dados do XYZAIOS exportados em JSON!");
     });
   }
 }
