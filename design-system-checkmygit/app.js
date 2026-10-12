@@ -1,27 +1,27 @@
 /**
  * XYZAIOS Design System - Interactive Application Logic
- * Showcase oficial do repositório: automacoescomerciaisintegradas/xyzaios
- * XYZAIOS: AI-Orchestrated System for Full Stack Development - Core Framework v4.0
+ * Showcase oficial do ecossistema: automacoescomerciaisintegradas
+ * XYZAIOS Core Framework v4.0 + Cleudocode Core v2.0 + REA Agents MCP
  */
 
 const PROFILE_DATA = {
   login: "automacoescomerciaisintegradas",
   repoName: "xyzaios",
-  name: "XYZAIOS",
+  name: "XYZAIOS & Cleudocode",
   title: "AI-Orchestrated System for Full Stack Development",
-  version: "Core Framework v4.0",
-  bio: "Framework unificado de orquestração com inteligência artificial, agentes autônomos para desenvolvimento Full Stack e paridade multi-IDE (Claude Code, Codex CLI e Gemini CLI).",
+  version: "Core Framework v4.0 • Cleudocode v2.0",
+  bio: "Super máquina de criar códigos baseada em AIOS + AIOX-Core. Framework unificado de orquestração com enxame semântico de agentes de IA, paridade multi-IDE e 116 ferramentas REA via MCP.",
   avatarUrl: "https://github.com/automacoescomerciaisintegradas.png",
   company: "Automações Comerciais Integradas",
   repoUrl: "https://github.com/automacoescomerciaisintegradas/xyzaios",
   websiteUrl: "https://github.com/automacoescomerciaisintegradas/xyzaios",
   email: "automacoescomerciais@gmail.com",
-  followers: 42,
+  followers: 48,
   following: 5,
-  totalContributions: 1420,
-  longestStreak: 48,
-  currentStreak: 12,
-  totalStars: 89,
+  totalContributions: 1680,
+  longestStreak: 54,
+  currentStreak: 16,
+  totalStars: 124,
   repositories: [
     {
       name: "xyzaios",
@@ -34,8 +34,28 @@ const PROFILE_DATA = {
       tags: ["aios", "framework-v4", "ai-orchestration", "multi-ide"]
     },
     {
+      name: "cleudocode-core",
+      description: "Cleudocode Core - Super Máquina de Criar Códigos baseada em AIOS + AIOX-Core com swarm semântico de agentes.",
+      language: "JavaScript",
+      langColor: "#f1e05a",
+      stars: 36,
+      forks: 8,
+      url: "https://github.com/automacoescomerciaisintegradas/cleudocode-core",
+      tags: ["cleudocode", "swarm", "semantic-agents", "ollama"]
+    },
+    {
+      name: "rea-agents",
+      description: "Suite avançada com 116 ferramentas de engenharia reversa e análise estática/dinâmica integrada via protocolo MCP.",
+      language: "TypeScript",
+      langColor: "#3178c6",
+      stars: 24,
+      forks: 5,
+      url: "https://github.com/automacoescomerciaisintegradas",
+      tags: ["mcp-server", "reverse-engineering", "binary-analysis"]
+    },
+    {
       name: "aios-core",
-      description: "Núcleo executivo do framework, constitution rules e barramento de autoridade dos agentes.",
+      description: "Núcleo executivo do framework, constitution rules e barramento de autoridade dos 12 agentes.",
       language: "JavaScript",
       langColor: "#f1e05a",
       stars: 18,
@@ -62,34 +82,14 @@ const PROFILE_DATA = {
       forks: 2,
       url: "https://github.com/automacoescomerciaisintegradas/xyzaios/tree/main/skills/workflows",
       tags: ["lobster", "workflows", "devops"]
-    },
-    {
-      name: "synapse-engine",
-      description: "Mecanismo de memória contextual, hooks pré-compactação e diagnóstico de execução.",
-      language: "JavaScript",
-      langColor: "#f1e05a",
-      stars: 8,
-      forks: 3,
-      url: "https://github.com/automacoescomerciaisintegradas/xyzaios",
-      tags: ["synapse", "context-memory", "diagnostics"]
-    },
-    {
-      name: "sdk-python",
-      description: "SDK em Python para integração programática com o ecossistema XYZAIOS e agentes externos.",
-      language: "Python",
-      langColor: "#3572A5",
-      stars: 7,
-      forks: 1,
-      url: "https://github.com/automacoescomerciaisintegradas/xyzaios/tree/main/packages/sdk/python",
-      tags: ["python", "sdk", "api"]
     }
   ],
   languages: [
-    { name: "JavaScript", percent: 46.2, color: "#f1e05a" },
-    { name: "TypeScript", percent: 31.4, color: "#3178c6" },
-    { name: "Python", percent: 12.8, color: "#3572A5" },
-    { name: "Shell", percent: 7.1, color: "#89e051" },
-    { name: "Markdown / Docs", percent: 2.5, color: "#083fa1" }
+    { name: "JavaScript", percent: 42.1, color: "#f1e05a" },
+    { name: "TypeScript", percent: 36.8, color: "#3178c6" },
+    { name: "Python", percent: 11.5, color: "#3572A5" },
+    { name: "Shell", percent: 7.2, color: "#89e051" },
+    { name: "Markdown / Docs", percent: 2.4, color: "#083fa1" }
   ]
 };
 
@@ -149,10 +149,10 @@ function renderHeatmap() {
       let level = 0;
       let count = 0;
 
-      if (rand > 0.40) {
-        if (rand > 0.85) { level = 4; count = Math.floor(Math.random() * 10) + 12; }
-        else if (rand > 0.68) { level = 3; count = Math.floor(Math.random() * 6) + 6; }
-        else if (rand > 0.52) { level = 2; count = Math.floor(Math.random() * 4) + 3; }
+      if (rand > 0.38) {
+        if (rand > 0.82) { level = 4; count = Math.floor(Math.random() * 12) + 14; }
+        else if (rand > 0.65) { level = 3; count = Math.floor(Math.random() * 7) + 7; }
+        else if (rand > 0.48) { level = 2; count = Math.floor(Math.random() * 5) + 3; }
         else { level = 1; count = 1; }
       }
 
@@ -163,7 +163,7 @@ function renderHeatmap() {
       cell.addEventListener("mouseenter", (e) => {
         const text = count === 0 
           ? `Nenhuma atividade em ${cell.getAttribute("data-date")}`
-          : `${count} contribuiç${count > 1 ? 'ões' : 'ão'} no XYZAIOS em ${cell.getAttribute("data-date")}`;
+          : `${count} contribuiç${count > 1 ? 'ões' : 'ão'} no ecossistema em ${cell.getAttribute("data-date")}`;
         
         tooltip.textContent = text;
         tooltip.classList.add("visible");
